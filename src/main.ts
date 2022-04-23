@@ -22,7 +22,7 @@ class EstacionamentoFront {
     const row = document.createElement("tr");
     row.innerHTML = `
                 <td>${carro.nome}</td>
-                <td>${carro.placa}</td>
+                <td class="user-select-all">${carro.placa}</td>
                 <td data-time="${carro.entrada}">
                     ${carro.entrada.toLocaleString("pt-BR", {
                       hour: "numeric",
@@ -30,7 +30,12 @@ class EstacionamentoFront {
                     })}
                 </td>
                 <td>
-                    <button class="delete">x</button>
+                    <button 
+                      type="button"
+                      class="btn btn-danger delete"
+                    >
+                      Retirar
+                    </button>
                 </td>
             `;
 
@@ -110,7 +115,9 @@ class Estacionamento {
   const estacionamento = new EstacionamentoFront($);
   estacionamento.render();
 
-  $("#send").addEventListener("click", () => {
+  $("#send").addEventListener("click", (event) => {
+    event.preventDefault();
+
     const nome = $("#name").value;
     const placa = $("#licence").value;
 
@@ -128,7 +135,7 @@ class Estacionamento {
   });
 
   $("#garage").addEventListener("click", ({ target }: MouseEvent | any) => {
-    if (target.className === "delete") {
+    if (target.className.match(/delete/)) {
       estacionamento.encerrar(target.parentElement.parentElement.cells);
       estacionamento.render();
     }

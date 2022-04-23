@@ -4,36 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Estacionamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Estacionamento 2.0</title>
   </head>
   <body>
-    <div>
-      <input
-        type="text"
-        id="name"
-        placeholder="Nome do veículo"
-        autocomplete="off"
-      />
-      <input
-        type="text"
-        id="licence"
-        placeholder="Placa do veículo"
-        autocomplete="off"
-      />
-      <button id="send" class="success">Registrar</button>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Veículo</th>
-          <th>Placa</th>
-          <th>Entrada</th>
-          <th>Ações</th>
-        </tr>
-      </thead>
-      <tbody id="garage"></tbody>
-    </table>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Estacionamento 2.0</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container container-fluid">
+      <form>
+        <h2>Adicionar veículo:</h2>
+        <div class="row mb-3">
+          <label for="name" class="col-sm-2 form-label">Nome do veículo: </label>
+          <div class="col-sm-10">
+            <input 
+              autocomplete="off"
+              class="form-control" 
+              id="name" 
+              placeholder="Nome do veículo"
+              type="text" 
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="licence" class="col-sm-2 form-label">Placa do veículo: </label>
+          <div class="col-sm-10">
+            <input 
+              autocomplete="off"
+              class="form-control" 
+              id="licence"
+              placeholder="Placa do veículo"
+              type="text" 
+            />
+          </div>
+        </div>
+        <button type="submit" id="send" class="success btn btn-primary">Submit</button>
+      </form>
+      <br />
+      <hr />
+      <h2>Lista de Veículos na Garagem: </h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Veículo</th>
+            <th scope="col">Placa</th>
+            <th scope="col">Entrada</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="garage"></tbody>
+      </table>
+    </main>
+    <br />
+    <hr />
+    <footer>
+      <div class="container-fluid">
+        <p>Projeto criado para fins de aprendizagem.</p>
+        <p>
+            Fonte do projeto no GitHub: 
+            <a 
+                href="https://github.com/didifive/estacionamento2.0-typescript"
+                target="_blank"
+            >
+              didifive/estacionamento2.0-typescript
+            </a>
+        </p>
+      </div>
+  </footer>
   </body>
 
-  <script src="main.js"></script>
+  <script src="../public/js/main.js"></script>
 </html>
