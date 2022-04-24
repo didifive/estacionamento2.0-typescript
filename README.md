@@ -34,26 +34,12 @@ Projeto desenvolvido com instruções de [Andre Soares] na trilha de estudo do B
 
 ---
 
-Abaixo seguem modificações feitas em relação ao projeto base:
-
-* Visual remodelado com adição do Bootstrap 5.0;
-
-
-
----
-
-Projeto online em: [estacionamento2.0.netlify.app](https://estacionamento2.0.netlify.app)  
-
-
----
-
 Links Interessantes:
 
 * [HTML5]
 * [JavaScript]
 * [TypeScript]
 * [Bootstrap]
-* [Netlify]
 
 [dio.me]: https://dio.me/
 [Andre Soares]: https://www.linkedin.com/in/andre-soares-dev/
@@ -63,4 +49,3 @@ Links Interessantes:
 [JavaScript]: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction
 [TypeScript]: https://www.typescriptlang.org/
 [Bootstrap]: https://getbootstrap.com/
-[Netlify]: https://www.netlify.com/

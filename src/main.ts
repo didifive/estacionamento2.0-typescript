@@ -34,7 +34,7 @@ class EstacionamentoFront {
                       type="button"
                       class="btn btn-danger delete"
                     >
-                      Retirar
+                      <i class="fa-solid fa-car-side"></i> Retirar
                     </button>
                 </td>
             `;
