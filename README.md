@@ -34,6 +34,9 @@ Projeto desenvolvido com instruções de [Andre Soares] na trilha de estudo do B
 
 ---
 
+Para compilar o arquivo typescript basta executar o comando `npx -p typescript tsc`
+---
+
 Links Interessantes:
 
 * [HTML5]
